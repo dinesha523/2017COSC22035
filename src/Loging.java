@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.nio.file.attribute.UserDefinedFileAttributeView;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -64,7 +65,7 @@ public class Loging {
             JOptionPane.showMessageDialog(null, "Username and password is correct");
             loginFR.setVisible(false);
             new userDetails(frUsername);
-        }
-        else JOptionPane.showMessageDialog(null,"password or username incorrect");
+
+        } else JOptionPane.showMessageDialog(null,"password or username incorrect");
     }
 }
